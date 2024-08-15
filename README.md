@@ -43,31 +43,28 @@ The project is structured into several key components:
 ### Prerequisites
 
 - [.NET SDK](https://dotnet.microsoft.com/download)
-- [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio](https://visualstudio.microsoft.com/)
 
 ### Running Locally
 
-1. Clone the repository:
+1. Create a new directory and navigate into it:
    ```bash
-   git clone <repository-url>
-   cd LifeDots
+   mkdir LifeDotsProject
+   cd LifeDotsProject
    ```
 
-2. Build the project:
+2. Clone the repository:
    ```bash
-   dotnet build
+   git clone https://github.com/rudolphreti/LifeDots-Blazor
+   cd LifeDots-Blazor
    ```
 
-3. Run the application:
-   ```bash
-   dotnet run
-   ```
+3. Open the project in Visual Studio:
+* Open Visual Studio.
+* Click on Open a project or solution.
+* Navigate to the cloned repository folder LifeDots-Blazor and open the .sln file.
 
-4. Open your browser and navigate to `https://localhost:5001` to view the application.
-
-### Deployment
-
-The application can be deployed to platforms like GitHub Pages or Azure. Follow the appropriate platform's documentation for deploying Blazor applications.
+5. Press F5 to run the project.
 
 ## Contributing
 
@@ -78,5 +75,4 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
-
-- Thanks to the Blazor and .NET communities for their support and resources.
+Thanks to the Blazor and .NET communities for their support and resources!
