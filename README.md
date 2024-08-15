@@ -5,7 +5,7 @@
 
 ## Overview
 
-The **LifeDots** project is a Blazor application designed to visualize the remaining weeks of a user's estimated lifespan as colored dots. This application is built using Blazor, .NET, and follows best practices such as SOLID principles and clean code methodologies.
+The **LifeDots** project is a Blazor application designed to visualize the remaining weeks of a user's estimated lifespan as colored dots. This application is built using Blazor (.NET-Platform).
 
 ## Features
 
