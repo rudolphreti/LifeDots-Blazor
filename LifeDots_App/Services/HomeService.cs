@@ -24,7 +24,6 @@ namespace LifeDots_App.Services
             }
         }
 
-
         public string Message { get; private set; } = string.Empty;
         public MarkupString DotsDisplay { get; private set; }
         public string SecondMessage { get; private set; } = string.Empty;
