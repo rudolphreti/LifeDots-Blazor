@@ -1,11 +1,14 @@
 
 # LifeDots Blazor Application
 
-![Screenshot](screen.jpg)
+[![Screenshot](screen.jpg)](https://rudolphreti.github.io/LifeDots-Blazor/)
+
 
 ## Overview
 
 The **LifeDots** project is a Blazor application designed to visualize the remaining weeks of a user's estimated lifespan as colored dots. This application is built using Blazor (.NET-Platform).
+
+[DEMO](https://rudolphreti.github.io/LifeDots-Blazor/)
 
 ## Features
 
