@@ -8,12 +8,6 @@ The **LifeDots** project is a Blazor application designed to visualize the remai
 
 [DEMO](https://rudolphreti.github.io/LifeDots-Blazor/)
 
-## Features
-
-- **User-Friendly Interface**: The application provides a simple and intuitive interface to calculate and visualize remaining life weeks.
-- **Customizable Components**: Built with reusable Blazor components to ensure maintainability and scalability.
-- **SOLID Principles**: Adheres to SOLID principles to ensure the code is modular, extensible, and easy to maintain.
-
 ## Project Structure
 
 The project is structured into several key components:
