@@ -1,4 +1,8 @@
 ﻿@page "/"
+@inject IHomeService HomeService
+@using LifeDots_App.Interfaces;
+
+
 <div id="main-container" class="container text-center mt-5">
     <div id="sub-container" class="mx-auto">
         <div id="logo-container" class="mb-4">
@@ -14,15 +18,15 @@
                 <button class="btn decrement-btn circle-button" @onclick="Decrement">-</button>
             </div>
             <div class="circle-container">
-                <input type="number" @bind="YearsToDie" min="0" class="circle-input" />
+                <input type="number" @bind="HomeService.YearsToDie" min="0" class="circle-input" @oninput="UpdateDisplay" />
             </div>
             <div class="circle-container">
                 <button class="btn increment-btn circle-button" @onclick="Increment">+</button>
             </div>
         </div>
 
-        <div id="message" class="mt-4">@Message</div>
-        <div id="dots" class="mt-4">@DotsDisplay</div>
-        <div id="second-message" class="mt-4">@SecondMessage</div>
+        <div id="message" class="mt-4">@HomeService.Message</div>
+        <div id="dots" class="mt-4">@((MarkupString)HomeService.DotsDisplay)</div>
+        <div id="second-message" class="mt-4">@HomeService.SecondMessage</div>
     </div>
 </div>
