@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "LifeDots_App",
   "resources": {
-    "hash": "sha256-iiv26MKmQLCze0Z9rnVfbx6U1KTktllzxc+IaZ0wW1U=",
+    "hash": "sha256-BIE6A8NnwUD5cDkdqRBW1PbePEk7x+0ynBKTn+yz4K4=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.746giovk6l.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "LifeDots_App.wasm": "sha256-Wo54+2Ce2ytlgrW0TIChAOCY9MFtEb7TFB94rViIpUY=",
+      "LifeDots_App.wasm": "sha256-+8Kn2rQt9bBeYkbvUmN02PxfuyDUEj02sD1klU8lReo=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-JUTlbeUBcl1gtGptiNa881jjpzlC2087A5rzQO7C/bM=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-eAD58WIY74jI8lOjIsnaDGrrlTJysrxqlXjXd/BRO1c=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-cjv0l2XLcfeTcLwHeVQeK+F20CSOw34aaTjOGlrKazc=",
