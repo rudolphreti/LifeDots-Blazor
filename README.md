@@ -1,8 +1,6 @@
-
 # LifeDots Blazor Application
 
 [![Screenshot](screen.jpg)](https://rudolphreti.github.io/LifeDots-Blazor/)
-
 
 ## Overview
 
