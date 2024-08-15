@@ -1,0 +1,33 @@
+name: Deploy to GitHub Pages
+
+on:
+  workflow_dispatch: # pozwala na ręczne uruchamianie workflow
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '7.0.x'
+
+    - name: Install dependencies
+      run: dotnet restore
+
+    - name: Build project
+      run: dotnet publish -c Release -o build
+
+    - name: Deploy to GitHub Pages
+      run: |
+        mkdir -p docs
+        cp -r build/wwwroot/* docs/
+        git config --local user.name "GitHub Actions"
+        git config --local user.email "actions@github.com"
+        git add docs
+        git commit -m "Deploy to GitHub Pages"
+        git push
