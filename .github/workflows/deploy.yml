@@ -1,7 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  workflow_dispatch: # pozwala na ręczne uruchamianie workflow
+  workflow_dispatch: # Pozwala na ręczne uruchamianie workflow
+
+permissions:
+  contents: write
 
 jobs:
   build-and-deploy:
