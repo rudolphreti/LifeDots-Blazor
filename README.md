@@ -61,6 +61,10 @@ The project is structured into several key components:
 
 5. Press F5 to run the project.
 
+## To do
+* Service for loading message content, e.g. from a JSON file
+* Support for multiple languages
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.

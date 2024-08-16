@@ -13,8 +13,8 @@ namespace LifeDots_App.Pages
         }
 
 
-        private void Increment() => HomeServiceInstance.IncrementYears();
-        private void Decrement() => HomeServiceInstance.DecrementYears();
-        private void UpdateDisplay() => HomeServiceInstance.UpdateDisplay();
+        public void Increment() => HomeServiceInstance.IncrementYears();
+        public void Decrement() => HomeServiceInstance.DecrementYears();
+        public void UpdateDisplay() => HomeServiceInstance.UpdateDisplay();
     }
 }

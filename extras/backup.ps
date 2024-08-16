@@ -1,0 +1,31 @@
+# Source path
+$sourcePath = "D:\00_Projekty\LifeDots\LifeDots_App"
+
+# ZIP file name
+$zipFileName = "ProjectBackup.zip"
+
+# Full path to the ZIP file
+$zipFilePath = "D:\00_Projekty\LifeDots\Extras\$zipFileName"
+
+# Create an empty ZIP file if it doesn't exist
+if (-not (Test-Path -Path $zipFilePath)) {
+    New-Item -Path $zipFilePath -ItemType File
+}
+
+# Folders to be compressed
+$foldersToCopy = @("Interfaces", "Pages", "Services")
+
+# Files to be compressed
+$filesToCopy = @("Program.cs")
+
+# Compressing folders to the ZIP archive
+foreach ($folder in $foldersToCopy) {
+    $srcFolder = Join-Path -Path $sourcePath -ChildPath $folder
+    Compress-Archive -Path $srcFolder -DestinationPath $zipFilePath -Update
+}
+
+# Compressing files to the ZIP archive
+foreach ($file in $filesToCopy) {
+    $srcFile = Join-Path -Path $sourcePath -ChildPath $file
+    Compress-Archive -Path $srcFile -DestinationPath $zipFilePath -Update
+}
