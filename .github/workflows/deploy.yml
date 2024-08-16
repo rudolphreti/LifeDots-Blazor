@@ -19,6 +19,12 @@ jobs:
       with:
         dotnet-version: '8.0.x'
 
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Run unit tests
+      run: dotnet test --no-build --verbosity normal
+
     - name: Build project
       run: dotnet publish -c Release -o build
 
