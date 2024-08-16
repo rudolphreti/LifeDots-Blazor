@@ -23,7 +23,7 @@ jobs:
       run: dotnet restore
 
     - name: Run unit tests
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --verbosity normal --logger "trx;LogFileName=TestResults.trx"
 
     - name: Build project
       run: dotnet publish -c Release -o build
